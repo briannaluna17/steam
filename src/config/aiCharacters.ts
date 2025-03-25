@@ -1,5 +1,5 @@
 // 首先定义模型配置
-export const modelConfigs = [
+export let modelConfigs = [
   {
     model: "qwen-plus",
     apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
@@ -50,7 +50,7 @@ export const modelConfigs = [
     apiKey: "BAIDU_API_KEY",
     baseURL: "https://qianfan.baidubce.com/v2"
   }
-] as const;
+] as let;
 export type ModelType = typeof modelConfigs[number]["model"];
 
 export interface AICharacter {
