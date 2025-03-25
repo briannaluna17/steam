@@ -7,7 +7,7 @@ export interface Group {
   isGroupDiscussionMode: boolean;
 }
 
-export const groups: Group[] = [
+export let groups: Group[] = [
   {
     id: 'group1',
     name: '🔥硅碳生命体交流群',
